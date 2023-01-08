@@ -1,0 +1,373 @@
+﻿//Based on: https://github.com/pieroaccardi/Unity_ForwardPlus
+
+#pragma kernel CSMain
+//#pragma enable_d3d11_debug_symbols 
+
+#pragma warning (disable : 4000) //for Metal
+
+#define BLOCK_SIZE 32
+#define MAX_LIGHTS_IN_TILE BLOCK_SIZE*BLOCK_SIZE
+
+#include "../Common.cginc" //TODO: works on all platforms?
+
+struct CS_INPUT
+{
+	uint3 Gid : SV_GroupID;
+	uint3 GTid : SV_GroupThreadID;
+	uint3 DTid : SV_DispatchThreadID;
+	uint GI : SV_GroupIndex;
+};
+
+float4 data;//(1.0f / Screen.width, 1.0f / Screen.height, numFrustumsX, numFrustumsY)
+float4 test;
+float4x4 InverseProjection;
+float4x4 WorldToViewMatrix;
+float4x4 ViewToWorldMatrix;//
+float4 _Light;
+float LightAngle;
+bool IndirectAlgorithm;
+
+Texture2D depthBuffer;
+StructuredBuffer<Light> lights;  //array with all lights and their properties
+RWBuffer<uint> currentIndex; 
+RWBuffer<uint> lightsIndexBuffer;
+
+RWTexture2D<uint2> lightsGrid;
+
+groupshared uint maxDepth;
+groupshared uint minDepth;
+groupshared uint lightsCount;
+groupshared uint startIndexOffset;
+groupshared uint indices[MAX_LIGHTS_IN_TILE]; 
+//groupshared float4 groupSphere;
+groupshared float4 transformedGroupSphere;
+
+void AppendLight(uint lightIndex)
+{
+	uint index;
+	InterlockedAdd(lightsCount, 1, index); //add 1 to the number of group lights
+	if (index < MAX_LIGHTS_IN_TILE)
+	{
+		indices[index] = lightIndex;  //indices is the local indices list
+	}
+}
+
+float4 ScreenToView(float4 screen, float2 dim_rcp)
+{
+	// Convert to normalized texture coordinates
+	float2 texCoord = screen.xy * dim_rcp;
+
+	// Convert to clip space
+	float4 clip = float4(float2(texCoord.x, 1.0f - texCoord.y) * 2.0f - 1.0f, screen.z, screen.w);
+
+	return ClipToViewSpace(clip, InverseProjection);
+}
+
+bool CappedConeVsSphere(in float3 origin, in float3 forward, in float size, in float angle, in float backadd, in float4 testSphere)
+{
+	const float3 V = testSphere.xyz - origin;
+	const float  VlenSq = dot(V, V);
+	const float  V1len = dot(V, forward);
+	const float  distanceClosestPoint = cos(angle) * sqrt(VlenSq - V1len * V1len) - V1len * sin(angle);
+
+	const bool angleCull = distanceClosestPoint > testSphere.w;
+	const bool frontCull = V1len > testSphere.w + size;
+	const bool backCull = V1len < -testSphere.w + backadd;
+	return !(angleCull || frontCull || backCull);
+}
+
+bool IntersectLinePlane(float3 a, float3 b, float4 plane, out float3 q)
+{
+	float3 ab = b - a;
+	float t = (plane.w - dot(plane.xyz, a)) / dot(plane.xyz, ab);
+	bool intersect = (t >= 0.0f && t <= 1.0f);
+	q = float3(0, 0, 0);
+	if (intersect)
+	{
+		q = a + t * ab;
+	}
+	return intersect;
+}
+
+void GenerateCoordinateSystem(float3 ZAxis, out float3 XAxis, out float3 YAxis)
+{
+	// Generates arbitrary but valid perpendicular unit vectors to ZAxis. ZAxis should be unit length.
+	if (abs(ZAxis.x) > abs(ZAxis.y))
+	{
+		float InverseLength = 1.0f / sqrt(dot(ZAxis.xz, ZAxis.xz));
+		XAxis = float3(-ZAxis.z * InverseLength, 0.0f, ZAxis.x * InverseLength);
+	}
+	else
+	{
+		float InverseLength = 1.0f / sqrt(dot(ZAxis.yz, ZAxis.yz));
+		XAxis = float3(0.0f, ZAxis.z * InverseLength, -ZAxis.y * InverseLength);
+	}
+
+	YAxis = cross(ZAxis, XAxis);
+}
+bool SphereIntersectCone(float4 SphereCenterAndRadius, float3 ConeVertex, float3 ConeAxis, float ConeAngleCos, float ConeAngleSin)
+{
+	float3 U = ConeVertex - (SphereCenterAndRadius.w / ConeAngleSin) * ConeAxis;
+	float3 D = SphereCenterAndRadius.xyz - U;
+	float DSizeSq = dot(D, D);
+	float E = dot(ConeAxis, D);
+
+	if (E > 0 && E * E >= DSizeSq * ConeAngleCos * ConeAngleCos)
+	{
+		D = SphereCenterAndRadius.xyz - ConeVertex;
+		DSizeSq = dot(D, D);
+		E = -dot(ConeAxis, D);
+
+		if (E > 0 && E * E >= DSizeSq * ConeAngleSin * ConeAngleSin)
+		{
+			return DSizeSq <= SphereCenterAndRadius.w * SphereCenterAndRadius.w;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+bool SphereIntersectConeWithMaxDistance(float4 SphereCenterAndRadius, float3 ConeVertex, float3 ConeAxis, float ConeAngleCos, float ConeAngleSin, float MaxDistanceAlongAxis)
+{
+	if (SphereIntersectCone(SphereCenterAndRadius, ConeVertex, ConeAxis, ConeAngleCos, ConeAngleSin))
+	{
+		float ConeAxisDistance = dot(SphereCenterAndRadius.xyz - ConeVertex, ConeAxis);
+		float ConeAxisDistanceMax = ConeAxisDistance - SphereCenterAndRadius.w;
+
+		return ConeAxisDistanceMax < MaxDistanceAlongAxis;
+	}
+
+	return false;
+}
+bool SphereIntersectSphere(float4 SphereCenterAndRadius, float4 OtherSphereCenterAndRadius)
+{
+	float CombinedRadii = SphereCenterAndRadius.w + OtherSphereCenterAndRadius.w;
+	float3 VectorBetweenCenters = SphereCenterAndRadius.xyz - OtherSphereCenterAndRadius.xyz;
+	return dot(VectorBetweenCenters, VectorBetweenCenters) < CombinedRadii * CombinedRadii;
+}
+inline float dot2(in float3 v) { return dot(v, v); }
+inline float segShadow(in float3 ro, in float3 rd, in float3 pa, float sh)
+{
+	float dm = dot(rd.yz, rd.yz);
+	float k1 = (ro.x - pa.x)*dm;
+	float k2 = (ro.x + pa.x)*dm;
+	float2  k5 = (ro.yz + pa.yz)*dm;
+	float k3 = dot(ro.yz + pa.yz, rd.yz);
+	float2  k4 = (pa.yz + pa.yz)*rd.yz;
+	float2  k6 = (pa.yz + pa.yz)*dm;
+
+	for (int i = 0; i < 4; i++)
+	{
+		float2  s = float2(i & 1, i >> 1);
+		float t = dot(s, k4) - k3;
+
+		if (t > 0.0)
+			sh = min(sh, dot2(float3(clamp(-rd.x*t, k1, k2), k5 - k6 * s) + rd * t) / (t*t));
+	}
+	return sh;
+}
+bool boxShadow(float3 ro, float3 rd, float4x4 txx, float3 rad, float sk, bool cheap)
+{
+	float3 rdd = mul(txx, float4(rd, 0.0)).xyz;
+	float3 roo = mul(txx, float4(ro, 1.0)).xyz;
+
+	float3 m = 1.0 / rdd;
+	float3 n = m * roo;
+	float3 k = abs(m)*rad;
+
+	float3 t1 = -n - k;
+	float3 t2 = -n + k;
+
+	float tN = max(max(t1.x, t1.y), t1.z);
+	float tF = min(min(t2.x, t2.y), t2.z);
+
+	if (cheap)
+	{
+		if (tN < tF && tF >= 0.0) return true;
+		if (tF < 0.0) return false;
+		float sh = saturate(0.3*(sk*2.0)*(tN - tF) / tN);
+		return sh < 1.0;
+	}
+	else
+	{
+		if (tN < tF && tF >= 0.0) return true;
+		float sh = 1.0;
+		sh = segShadow(roo.xyz, rdd.xyz, rad.xyz, sh);
+		sh = segShadow(roo.yzx, rdd.yzx, rad.yzx, sh);
+		sh = segShadow(roo.zxy, rdd.zxy, rad.zxy, sh);
+		return sh < 0.55;
+	}
+}
+
+
+[numthreads(BLOCK_SIZE, BLOCK_SIZE,1)]
+void CSMain (CS_INPUT input)
+{
+	uint2 dim;
+	depthBuffer.GetDimensions(dim.x, dim.y);
+	uint2 texcoord = input.DTid.xy;  //screen coordinates
+	texcoord.y = 1.0 / data.y - texcoord.y;
+	texcoord = min(texcoord, dim - 1);// avoid loading from outside the texture, it messes up the min-max depth
+	float depth = 1.0 - depthBuffer.Load(int3(texcoord, 0)).r;  //read the depth and invert
+	uint intDepth = asuint(depth);  //convert to int for atomic operations
+	
+	if (input.GI == 0)  //primo group thread
+	{
+		minDepth = 0xffffffff;
+		maxDepth = 0;
+		lightsCount = 0;
+	}
+
+	GroupMemoryBarrierWithGroupSync();
+
+	if (depth < 1.0) 
+	{
+		InterlockedMin(minDepth, intDepth);
+		InterlockedMax(maxDepth, intDepth);
+	}
+
+	GroupMemoryBarrierWithGroupSync();
+
+	float fMin = asfloat(minDepth);
+	float fMax = asfloat(maxDepth);
+
+	float minInViewSpace = ClipToViewSpace(float4(0, 0, 1 - fMin, 1), InverseProjection).z; //also here the z is inverted again
+	float maxInViewSpace = ClipToViewSpace(float4(0, 0, 1 - fMax, 1), InverseProjection).z;
+
+	float2 dim_rcp = data.xy;
+	if (input.GI == 0 && minDepth != 0xffffffff && maxDepth != 0)
+	{
+		float4 pMin = float4(input.Gid.xy * BLOCK_SIZE, 0.0f, 1.0f);
+		// More bottom-right point in screen space
+		float4 pMax = float4((input.Gid.xy + 1) * BLOCK_SIZE, 0.0f, 1.0f);
+
+		pMin = ScreenToView(pMin, dim_rcp);
+		pMax = ScreenToView(pMax, dim_rcp);
+
+		float3 nearMin, nearMax, farMin, farMax;
+		// Origin (camera eye position)
+		float3 eye = float3(0, 0, 0);
+		float4 nearPlane = float4(0.0f, 0.0f, -1.0f, -minInViewSpace);
+		float4 farPlane = float4(0.0f, 0.0f, -1.0f, -maxInViewSpace);
+		IntersectLinePlane(eye, (float3)pMin, nearPlane, nearMin);
+		IntersectLinePlane(eye, (float3)pMax, nearPlane, nearMax);
+		IntersectLinePlane(eye, (float3)pMin, farPlane, farMin);
+		IntersectLinePlane(eye, (float3)pMax, farPlane, farMax);
+
+		//TODO: try half-z culling
+		float3 minAABB = min(nearMin, min(nearMax, min(farMin, farMax)));
+		float3 maxAABB = max(nearMin, max(nearMax, max(farMin, farMax)));
+		float4 groupSphere = float4(lerp(minAABB, maxAABB, 0.5), length(maxAABB - lerp(minAABB, maxAABB, 0.5)));
+		transformedGroupSphere = float4(mul(ViewToWorldMatrix, float4(groupSphere.xyz, 1.0)).xyz, groupSphere.w);//
+
+	}
+
+	GroupMemoryBarrierWithGroupSync();
+
+	//the number of thread in the group is 1024, as the number of light to process, so every thread processes its own light
+
+	//we do have access to per pixel depth here, and could calculate per pixel world pos(is it clip space? xy=uv+z=depth)
+	float3 lightDir = normalize(_Light.xyz - (transformedGroupSphere.xyz * (_Light.w > 0)));
+	float lightVectorLength = _Light.w > 0 ? length(_Light.xyz - transformedGroupSphere.xyz) : 0;
+
+	Light light = lights[input.GI];
+	if (minDepth != 0xffffffff && maxDepth != 0 && light.boundingConeRadius > 0)
+	{
+		if (!IndirectAlgorithm || light.mat[3][3] == 3 || light.mat[3][3] == 4)
+		{
+			//TODO: can we try something here with box matrix projection or an elongated box frustum?
+			/*if (light.mat[3][3] == 3 || light.mat[3][3] == 4) 
+			{
+				float4x4 mat = light.mat;
+				float4 v = mat[3];
+				mat[3] = float4(0.0, 0.0, 0.0, 1.0);
+				if (boxShadow(transformedGroupSphere.xyz, lightDir, mat, v.xyz + transformedGroupSphere.w, 1000, false))
+				{
+					AppendLight(input.GI);
+				}
+			}
+			else */if (CappedConeVsSphere(light.boundingConePos, -lightDir, light.boundingConeLength, light.boundingConeRadius, light.boundingConeBackadd, transformedGroupSphere))
+			{
+				AppendLight(input.GI);
+			}
+		}
+		else
+		{
+			float4 BoundingSphere = transformedGroupSphere;
+
+			float3 ConeAxis0 = lightDir;
+			float ConeAngleCos0 = cos(LightAngle);
+			float ConeAngleSin0 = sin(LightAngle);
+
+			float3 TransformedTileBoundingSphereCenter0 = BoundingSphere.xyz;
+			float3 TransformedConeAxis0 = ConeAxis0;
+
+			float3 TransformedSphereCenter;
+			float TransformedSphereRadius;
+
+			if (light.mat[3][3] == 1) //could try put direct boxes as spheres here too
+			{
+				TransformedSphereCenter = float3(light.mat[0][0], light.mat[1][0], light.mat[2][0]);
+				TransformedSphereRadius = light.mat[3][0];
+			}
+			else if (light.mat[3][3] == 2)
+			{
+				float3 a = float3(light.mat[0][0], light.mat[1][0], light.mat[2][0]);
+				float3 b = float3(light.mat[0][1], light.mat[1][1], light.mat[2][1]);
+				TransformedSphereCenter = lerp(a, b, 0.5);
+				TransformedSphereRadius = light.mat[3][0];
+
+				float4 CapsuleOrientationAndLength = float4(normalize(b - a), distance(a, b));
+				float4 CapsuleCenterAndRadius = float4(TransformedSphereCenter, TransformedSphereRadius);
+
+				float3 CapsuleSpaceX;
+				float3 CapsuleSpaceY;
+				float3 CapsuleSpaceZ = CapsuleOrientationAndLength.xyz;
+				GenerateCoordinateSystem(CapsuleSpaceZ, CapsuleSpaceX, CapsuleSpaceY);
+
+				// Scale required along the capsule's axis to turn it into a sphere (assuming it was originally a scaled sphere instead of a capsule)
+				float CapsuleZScale = CapsuleCenterAndRadius.w / (.5f * CapsuleOrientationAndLength.w + CapsuleCenterAndRadius.w);
+				CapsuleSpaceZ *= CapsuleZScale;
+
+				// The capsule is centered at 0 in the scaled sphere space
+				TransformedSphereCenter = 0;
+
+				// Transform the sphere center and cone axis into the scaled sphere space
+				float3 CapsuleCenterToTileCenter0 = BoundingSphere.xyz - CapsuleCenterAndRadius.xyz;
+				TransformedTileBoundingSphereCenter0 = float3(dot(CapsuleCenterToTileCenter0, CapsuleSpaceX), dot(CapsuleCenterToTileCenter0, CapsuleSpaceY), dot(CapsuleCenterToTileCenter0, CapsuleSpaceZ));
+				// Renormalize the cone axis as it went through a non-uniformly scaled transform
+				TransformedConeAxis0 = normalize(float3(dot(ConeAxis0, CapsuleSpaceX), dot(ConeAxis0, CapsuleSpaceY), dot(ConeAxis0, CapsuleSpaceZ)));
+			}
+
+			//float MaxOcclusionDistance = 10.0 * TransformedSphereRadius / LightAngle;
+			float MaxOcclusionDistance = light.minMaxDist.y * TransformedSphereRadius / (_Light.w > 0 ? lightVectorLength / _Light.w : 1);
+			//float MaxOcclusionDistance = 9999;
+
+			if (SphereIntersectSphere(float4(TransformedSphereCenter, TransformedSphereRadius + MaxOcclusionDistance), float4(TransformedTileBoundingSphereCenter0, BoundingSphere.w))
+				&& SphereIntersectConeWithMaxDistance(float4(TransformedSphereCenter, TransformedSphereRadius + BoundingSphere.w), TransformedTileBoundingSphereCenter0, TransformedConeAxis0, ConeAngleCos0, ConeAngleSin0, MaxOcclusionDistance)
+				&& MaxOcclusionDistance-0.5 > 0
+				)//&& ((distance(TransformedSphereCenter, TransformedTileBoundingSphereCenter0) - lightVectorLength - TransformedSphereRadius*6) * TransformedSphereRadius) < 1)//fails with depth discontinuities
+			{
+				AppendLight(input.GI);
+			}
+		}
+	}
+
+	GroupMemoryBarrierWithGroupSync();
+
+	if (input.GI == 0) 
+	{
+		InterlockedAdd(currentIndex[0], lightsCount, startIndexOffset);
+		lightsGrid[input.Gid.xy] = uint2(startIndexOffset, lightsCount);
+	}
+
+	GroupMemoryBarrierWithGroupSync();
+
+	for (uint i = input.GI; i < lightsCount; i += BLOCK_SIZE * BLOCK_SIZE)
+	{
+		lightsIndexBuffer[startIndexOffset + i] = indices[i];
+	}
+}

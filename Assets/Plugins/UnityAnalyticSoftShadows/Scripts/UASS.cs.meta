@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ff3282fefe2b26c45ace3a7a32cc4ae2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Material: {fileID: 2100000, guid: 4e4852d0bbc48de4ea59533d3f65cb85, type: 2}
+  - HeatmapMaterial: {fileID: 2100000, guid: b22fb374561ccdb4b8187c08d74d85a1, type: 2}
+  - LightCullingCompute: {fileID: 7200000, guid: aaa3c0ad428f8f5429e50656fb013007,
+      type: 3}
+  - light: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

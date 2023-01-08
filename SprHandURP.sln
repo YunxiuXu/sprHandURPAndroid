@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{8be858cc-94f8-7b8b-8fb7-40024c1e04e3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.Core", "Ultraleap.Tracking.Core.csproj", "{51504ec8-45a2-f8c6-da34-c548ea207ff3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapMotion.LeapCSharp", "LeapMotion.LeapCSharp.csproj", "{4ba061fe-0fcf-5e28-db80-6330565fdbaf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.InteractionEngine", "Ultraleap.Tracking.InteractionEngine.csproj", "{152ef4d6-e560-0dd2-693e-f280e3709593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.Hands", "Ultraleap.Tracking.Hands.csproj", "{7c901221-49ba-f6b0-c29f-2b896fb525af}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{b9e37efb-2150-bc2e-abc9-b6af9539b0fc}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.Core.Editor", "Ultraleap.Tracking.Core.Editor.csproj", "{35fb3acc-239e-0a8c-0837-ba72ae7561d0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{fb886a6a-19fd-027c-fcd7-7e08f8d21957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.InteractionEngine.Editor", "Ultraleap.Tracking.InteractionEngine.Editor.csproj", "{4071dfa5-f0b6-388c-8e8c-004941f03d40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.Core.Editor.Tests", "Ultraleap.Tracking.Core.Editor.Tests.csproj", "{df3bcbca-1ba4-0d79-09a6-f13365f6693f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraleap.Tracking.Hands.Editor", "Ultraleap.Tracking.Hands.Editor.csproj", "{0248087a-7042-5448-c846-62b875f5c4ed}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{a8aa2b29-498e-b939-6e82-8db9131ebd11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8be858cc-94f8-7b8b-8fb7-40024c1e04e3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8be858cc-94f8-7b8b-8fb7-40024c1e04e3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51504ec8-45a2-f8c6-da34-c548ea207ff3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51504ec8-45a2-f8c6-da34-c548ea207ff3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ba061fe-0fcf-5e28-db80-6330565fdbaf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ba061fe-0fcf-5e28-db80-6330565fdbaf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152ef4d6-e560-0dd2-693e-f280e3709593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152ef4d6-e560-0dd2-693e-f280e3709593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7c901221-49ba-f6b0-c29f-2b896fb525af}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7c901221-49ba-f6b0-c29f-2b896fb525af}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b9e37efb-2150-bc2e-abc9-b6af9539b0fc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b9e37efb-2150-bc2e-abc9-b6af9539b0fc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35fb3acc-239e-0a8c-0837-ba72ae7561d0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35fb3acc-239e-0a8c-0837-ba72ae7561d0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fb886a6a-19fd-027c-fcd7-7e08f8d21957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fb886a6a-19fd-027c-fcd7-7e08f8d21957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4071dfa5-f0b6-388c-8e8c-004941f03d40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4071dfa5-f0b6-388c-8e8c-004941f03d40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{df3bcbca-1ba4-0d79-09a6-f13365f6693f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{df3bcbca-1ba4-0d79-09a6-f13365f6693f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0248087a-7042-5448-c846-62b875f5c4ed}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0248087a-7042-5448-c846-62b875f5c4ed}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a8aa2b29-498e-b939-6e82-8db9131ebd11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a8aa2b29-498e-b939-6e82-8db9131ebd11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
