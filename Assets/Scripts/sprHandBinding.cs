@@ -15,7 +15,8 @@ public class sprHandBinding : MonoBehaviour
             if (childTransform == null)
             {
                 GameObject instance = Instantiate(sprBone, targetBone[i].transform);
-                instance.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
+                instance.transform.localScale = targetBone[i].transform.lossyScale;
+                //instance.transform.localScale = new Vector3(0.02f, 0.02f, 0.02f);
                 instance.transform.localRotation = Quaternion.Euler(new Vector3(90, 0, 0));
             }
         }
