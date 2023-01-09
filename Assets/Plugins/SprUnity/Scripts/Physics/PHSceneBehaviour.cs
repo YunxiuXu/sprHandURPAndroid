@@ -367,7 +367,7 @@ public class PHSceneBehaviour : SprBehaviour {
                     // -- TBD
                     foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag(c.solid1Pattern))
                     {
-                        print(fooObj.name);
+                        //print(fooObj.name);
                         solid1s.Add(fooObj.GetComponent<PHSolidBehaviour>());
                     }
                 }

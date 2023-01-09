@@ -14,9 +14,17 @@ public class sprHandBindingEditor : Editor
         DrawDefaultInspector();
 
         // Draw a button in the inspector
-        if (GUILayout.Button("Do something"))
+        if (GUILayout.Button("Bind"))
         {
-            script.dosth();
+            script.Bind();
+        }
+        if (GUILayout.Button("FindTargetBoneByName"))
+        {
+            script.FindTargetBoneByName();
+        }
+        if (GUILayout.Button("ClearTargetBone"))
+        {
+            script.ClearTargetBone();
         }
     }
 }

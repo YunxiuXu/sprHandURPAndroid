@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{b4a15442-29ab-49ff-ccf1-4586efd5cf72}</ProjectGuid>
+    <ProjectGuid>{0248087a-7042-5448-c846-62b875f5c4ed}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Ultraleap.Tracking.Hands.Editor</AssemblyName>
@@ -264,32 +264,35 @@
     <Reference Include="UnityEditor.Graphs">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+        <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="SprCSharp">
-        <HintPath>D:\UnityProject\sprHandURP\Assets\Plugins\SprUnity\Plugins\SprCSharp.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Assets\Plugins\SprUnity\Plugins\SprCSharp.dll</HintPath>
     </Reference>
     <Reference Include="SprImport">
-        <HintPath>D:\UnityProject\sprHandURP\Assets\Plugins\SprUnity\Plugins\SprImport.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Assets\Plugins\SprUnity\Plugins\SprImport.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.render-pipelines.core@10.8.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.render-pipelines.core@10.8.1\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>D:\UnityProject\sprHandURP\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll</HintPath>
@@ -640,29 +643,29 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.33f1\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:\UnityProject\sprHandURP\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:\UnityProject\sprHandURP\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>D:\UnityProject\sprHandURP\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>D:\UnityProject\sprHandURP\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:\XYX\UnityProjects\SprHandURP\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Ultraleap.Tracking.Hands.csproj">
-      <Project>{abf2c025-18bc-ac2b-0954-f57348b6594e}</Project>
+      <Project>{7c901221-49ba-f6b0-c29f-2b896fb525af}</Project>
       <Name>Ultraleap.Tracking.Hands</Name>
     </ProjectReference>
     <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{f17b7e00-5298-24dd-0d25-8280d92681f0}</Project>
+      <Project>{4ba061fe-0fcf-5e28-db80-6330565fdbaf}</Project>
       <Name>LeapMotion.LeapCSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Ultraleap.Tracking.Core.csproj">
-      <Project>{2af9a2e8-661d-80be-4f8b-c48bc7c35b6f}</Project>
+      <Project>{51504ec8-45a2-f8c6-da34-c548ea207ff3}</Project>
       <Name>Ultraleap.Tracking.Core</Name>
     </ProjectReference>
   </ItemGroup>
