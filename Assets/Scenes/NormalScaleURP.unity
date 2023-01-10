@@ -29152,7 +29152,7 @@ MonoBehaviour:
     maxAngularVelocity: 100
     maxForce: 3.4028234663852886e+38
     maxMoment: 3.4028234663852886e+38
-    numIteration: 200
+    numIteration: 100
     method: 0
     bContactDetectionEnabled: 1
     bCCDEnabled: 1
