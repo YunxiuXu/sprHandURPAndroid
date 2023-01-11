@@ -312,6 +312,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &15824839
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -465,6 +466,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &35685685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,6 +782,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &38472699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -928,6 +931,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &58192464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,6 +1404,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &97517507
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1800,6 +1805,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &131090073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2091,6 +2097,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &149756159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2350,6 +2357,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &153734715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2557,6 +2565,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &163310264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2778,6 +2787,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &163626077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3097,6 +3107,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &272920854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3831,6 +3842,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &335887526
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4275,6 +4287,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &388108403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4762,6 +4775,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &484838835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5053,6 +5067,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &485664609
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5209,6 +5224,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &500294385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5524,6 +5540,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &510008482
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5867,6 +5884,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &525618506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6105,6 +6123,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &538470960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6343,6 +6362,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &541463843
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6591,6 +6611,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &551447996
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6734,6 +6755,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &564205125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7049,6 +7071,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &590754463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7178,6 +7201,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &595292642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7530,6 +7554,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &620607694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7737,6 +7762,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &622167905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8010,6 +8036,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &625531596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8487,6 +8514,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &651086030
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8678,6 +8706,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &656588462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8884,6 +8913,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &657682092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9232,6 +9262,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &666144926
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9679,6 +9710,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &702318312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9950,6 +9982,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &703386731
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10107,6 +10140,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &705243804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10327,6 +10361,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &712837977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10648,6 +10683,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &733968374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10869,6 +10905,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &734684804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11347,6 +11384,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &757550745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11669,6 +11707,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &780947113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11994,6 +12033,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &825200228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12214,6 +12254,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &828303097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12686,6 +12727,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &866363068
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12815,6 +12857,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &876246859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13183,6 +13226,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &895684845
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13383,6 +13427,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &908811624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13646,6 +13691,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &919701078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13962,6 +14008,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &921038842
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14091,6 +14138,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &937379652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14366,6 +14414,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &964830162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14586,6 +14635,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &964968005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14792,6 +14842,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &967129161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15213,6 +15264,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &975692918
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15342,6 +15394,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &989028277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15725,6 +15778,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1033083779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15978,6 +16032,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1058280452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16293,6 +16348,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1060316168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16531,6 +16587,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1060414323
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16580,6 +16637,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060414319}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1065678756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7006111489895050087, guid: f1a2c7a6fb148664eabf5aad36e0aafc, type: 3}
+  m_PrefabInstance: {fileID: 3987958244412735277}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1073556422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6326941314916902066, guid: f1a2c7a6fb148664eabf5aad36e0aafc, type: 3}
@@ -16850,6 +16912,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1075404331
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17111,6 +17174,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1082387059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17527,6 +17591,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1099166030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17734,6 +17799,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1104153233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18050,6 +18116,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1109271520
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18264,6 +18331,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1118036353
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18553,6 +18621,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1137708112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18695,6 +18764,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1137994815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18968,6 +19038,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1152674750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19174,6 +19245,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1154449611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19490,6 +19562,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1161369815
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19633,6 +19706,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1161644422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20148,6 +20222,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1203944179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20532,6 +20607,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1210177996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20790,6 +20866,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1251300871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20997,6 +21074,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1251381436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21218,6 +21296,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1255881897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21487,6 +21566,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1279186529
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -21863,6 +21943,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1324519287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22148,6 +22229,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1338137735
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22386,6 +22468,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1339705128
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22529,6 +22612,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1342881172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22735,6 +22819,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1346367723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22947,6 +23032,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1350022060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23368,6 +23454,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1392524982
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23549,6 +23636,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1402048477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23875,6 +23963,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1422636756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24242,6 +24331,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1440123337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24628,6 +24718,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1464870834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24944,6 +25035,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1466430965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25239,6 +25331,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1492149155
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25687,6 +25780,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1504278260
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26030,6 +26124,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1548773083
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26211,6 +26306,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1554213586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26442,6 +26538,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1587997765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26700,6 +26797,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1601743202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26997,6 +27095,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &1630713221
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27248,6 +27347,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1634815693
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27387,6 +27487,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1683767227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27594,6 +27695,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1693571869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27910,6 +28012,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1697376243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28148,6 +28251,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1704927500
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28277,6 +28381,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1707098951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28593,6 +28698,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1709735899
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28831,6 +28937,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1712306592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28974,6 +29081,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1712403254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29111,6 +29219,7 @@ GameObject:
   - component: {fileID: 1718357350}
   - component: {fileID: 1718357349}
   - component: {fileID: 1718357351}
+  - component: {fileID: 1718357352}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -29219,6 +29328,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oneHand: {fileID: 429129829}
+--- !u!114 &1718357352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718357348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf8b9ae92017a742a2ec0b82d7eb12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oneHand: {fileID: 1065678756}
 --- !u!1 &1728192291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2590177641026267042, guid: f1a2c7a6fb148664eabf5aad36e0aafc, type: 3}
@@ -29318,6 +29440,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1747938801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29695,6 +29818,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1754876961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29967,6 +30091,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1763767784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30282,6 +30407,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1805624199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30530,6 +30656,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1820337818
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30826,6 +30953,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1865513315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31287,6 +31415,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1876092041
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -31482,6 +31611,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1896395208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32018,6 +32148,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1939762735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32239,6 +32370,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1945432920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32459,6 +32591,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &1956535088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32722,6 +32855,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &1978304635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33043,6 +33177,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &1986732430
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33386,6 +33521,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!23 &2001873381
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33600,6 +33736,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &2003549784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33852,6 +33989,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &2055229129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34073,6 +34211,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &2057179563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34293,6 +34432,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &2060411106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34584,6 +34724,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &2062739271
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34811,6 +34952,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!23 &2065668434
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -34967,6 +35109,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!114 &2093443232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35278,6 +35421,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &2113294006
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -192,11 +192,12 @@ public class PHSolidBehaviour : SprSceneObjBehaviour {
         UpdateCenterOfMass();
     }
     // GameObjectの位置姿勢をSpringhead剛体に適用 適用対象(fixedSolid,dynamicalOff)の親にSolidがあると問題が起こる
-    public bool isUsingGravity = true;
+    public bool isUsingGravity = true, isStop = false;
     public void UpdateSolidFromGameObject() {
         if (sprObject != null) {
             PHSolidIf so = sprObject as PHSolidIf;
             so.SetGravity(isUsingGravity);//额外加的 是否使用重力
+            so.SetStationary(isStop);
             //so.AddForce(new Vec3f(0f, 10, 0));
             // so.AddTorque(new Vec3d(1.0, 0.0, 0.0));
             if (fixedSolid) {
@@ -260,7 +261,6 @@ public class PHSolidBehaviour : SprSceneObjBehaviour {
             }
         }
     }
-
     public void UpdateCenterOfMass() {
         if (centerOfMass != null) {
             Vec3d centerOfMassLocalPos = gameObject.transform.ToPosed().Inv() * centerOfMass.transform.position.ToVec3d();

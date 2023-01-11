@@ -22,19 +22,34 @@ public class staticOnHandPresent : MonoBehaviour
     {
         if (oneHand.activeSelf && !wasActive)
         {
-            for (int i = 0; i < this.gameObject.transform.childCount; i++)
-            {
-                Transform child = this.gameObject.transform.GetChild(i);
-                //print(child.name);
-                if(child.GetComponent<PHSolidBehaviour>() != null){
-                    //print(child.name);
-                    //print(child.GetComponent<PHSolidBehaviour>().GetDescStruct());
-                    //child.GetComponent<PHSolidBehaviour>().ApplyDesc(child.GetComponent<PHSolidBehaviour>().GetDescStruct(), child.GetComponent<PHSolidBehaviour>().GetDescStruct());
-                }
-            }
-            Debug.Log("objectActive");
+            StartCoroutine(DisableHandForNSecs(0.2f));
         }
 
         wasActive = oneHand.activeSelf;
     }
+
+    IEnumerator DisableHandForNSecs(float time)//这样遍历效率可能低 日后改 下次一定
+    {
+        for (int i = 0; i < this.gameObject.transform.childCount; i++)
+        {
+            Transform child = this.gameObject.transform.GetChild(i);
+            //print(child.name);
+            if(child.GetComponent<PHSolidBehaviour>() != null){ 
+                child.GetComponent<PHSolidBehaviour>().isStop = true;
+            }
+        }    //freeze all Objects
+
+        yield return new WaitForSeconds(time);
+
+        //recover after several seconds
+        for (int i = 0; i < this.gameObject.transform.childCount; i++)
+        {
+            Transform child = this.gameObject.transform.GetChild(i);
+            //print(child.name);
+            if(child.GetComponent<PHSolidBehaviour>() != null){ 
+                child.GetComponent<PHSolidBehaviour>().isStop = false;
+            }
+        }   
+    }
+
 }

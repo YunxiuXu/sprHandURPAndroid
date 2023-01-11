@@ -325,6 +325,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 1
+  isStop: 0
 --- !u!1 &2442200316142212097
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,6 +533,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!1 &2770079726883638189
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +728,7 @@ MonoBehaviour:
   fixedSolidPosition: {x: 0, y: 0, z: 0}
   fixedSolidRotation: {x: 0, y: 0, z: 0, w: 0}
   isUsingGravity: 0
+  isStop: 0
 --- !u!114 &8990528639180242402
 MonoBehaviour:
   m_ObjectHideFlags: 0
