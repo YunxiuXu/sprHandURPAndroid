@@ -584,7 +584,7 @@ MonoBehaviour:
   aim: {fileID: 0}
   childSprSolid: {fileID: 2442200316142212097}
   rotationOffset: {x: 0, y: 0, z: 0}
-  positionOffset: {x: 0, y: 0, z: 0.01}
+  positionOffset: {x: 0.01, y: 0, z: 0}
   scaleOffset: {x: 0.01, y: 0.01, z: 0.01}
 --- !u!1 &8252787020852258099
 GameObject:
