@@ -4140,7 +4140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373557063}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc1f6d4cb32529e40a6b046c611ec732, type: 3}
   m_Name: 
@@ -18196,7 +18196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118036348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.015000001, y: 0.23699999, z: 0.1}
+  m_LocalPosition: {x: -0.0841, y: 0.23699999, z: -0.1226}
   m_LocalScale: {x: 0.082, y: 0.037, z: 0.032}
   m_Children: []
   m_Father: {fileID: 1718357350}
@@ -18238,8 +18238,8 @@ MonoBehaviour:
     material:
       _flag: 0
       density: 1
-      mu: 0.3
-      mu0: 0.5
+      mu: 0.7
+      mu0: 0.8
       e: 0.4
       rotationFriction: 0.001
       spring: 0
@@ -20089,7 +20089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1175393578
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20099,7 +20099,7 @@ SphereCollider:
   m_GameObject: {fileID: 1175393577}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -33739,9 +33739,9 @@ MonoBehaviour:
     material:
       _flag: 0
       density: 1
-      mu: 0.3
-      mu0: 0.7
-      e: 0.8
+      mu: 0.7
+      mu0: 0.8
+      e: 0.4
       rotationFriction: 0.001
       spring: 0
       damper: 0

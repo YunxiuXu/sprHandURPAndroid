@@ -7098,7 +7098,7 @@ MonoBehaviour:
   childSprSolid: {fileID: 1456941134}
   rotationOffset: {x: 0, y: 0, z: 0}
   positionOffset: {x: 0.015, y: 0, z: 0}
-  scaleOffset: {x: 0.01, y: 0.015, z: 0.01}
+  scaleOffset: {x: 0.01, y: 0.01, z: 0.01}
 --- !u!1 &485664604
 GameObject:
   m_ObjectHideFlags: 0
@@ -18842,8 +18842,8 @@ MonoBehaviour:
     material:
       _flag: 0
       density: 1
-      mu: 0.3
-      mu0: 0.5
+      mu: 0.7
+      mu0: 0.8
       e: 0.4
       rotationFriction: 0.001
       spring: 0
@@ -24209,7 +24209,7 @@ Transform:
   m_GameObject: {fileID: 1456941134}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0.015, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.015, z: 0.01}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 484966947}
   m_RootOrder: 1
@@ -29201,6 +29201,7 @@ MonoBehaviour:
     solid2: {fileID: 0}
     solid2Pattern: HandSolid
     mode: 0
+  forcePoint: {fileID: 0}
 --- !u!4 &1718357350
 Transform:
   m_ObjectHideFlags: 0
@@ -34241,9 +34242,9 @@ MonoBehaviour:
     material:
       _flag: 0
       density: 1
-      mu: 0.3
-      mu0: 0.7
-      e: 0.8
+      mu: 0.7
+      mu0: 0.8
+      e: 0.4
       rotationFriction: 0.001
       spring: 0
       damper: 0
