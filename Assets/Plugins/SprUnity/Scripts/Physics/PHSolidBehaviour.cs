@@ -211,7 +211,6 @@ public class PHSolidBehaviour : SprSceneObjBehaviour {
                     
                     // Dynamicalでない剛体はUnityの位置をSpringheadに反映（操作可能）
                     so.SetPose(gameObject.transform.ToPosed());
-                    
                 }
 
                 fixedSolidPosition = gameObject.transform.position;

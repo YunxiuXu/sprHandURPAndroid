@@ -265,9 +265,25 @@ public class PHSceneBehaviour : SprBehaviour {
         }
 
     }
+    // Vec3d f = new Vec3d();
+    // Vec3d to = new Vec3d();
+    // Posed pose = new Posed();
 
+    // public GameObject forcePoint;
+    // List<GameObject> PosedList = new List<GameObject>();
     void FixedUpdate() {
-
+        // PosedList.Clear();
+        // for (int i = 0; i < phScene.NContacts(); i++){
+        //     print(i);
+        //     PHContactPointIf contact = phScene.GetContact(i);
+            
+        //     contact.GetConstraintForce(f, to);//一个是力另一个是力矩
+        //     contact.GetSocketPose(pose);
+        //     GameObject oneSphere = Instantiate(forcePoint);
+        //     oneSphere.transform.position = new Vector3((float)pose.px, (float)pose.py, (float)pose.pz);
+        //     PosedList.Add(oneSphere);
+        //     Destroy(oneSphere, 0.5f);
+        // }
         if (enableUpdate) {
             foreach (var callBackItem in fixedUpdateCallbacks[CallbackPriority.BeforeUpdateSolidFromGameObject]) {
                 callBackItem.callback();
