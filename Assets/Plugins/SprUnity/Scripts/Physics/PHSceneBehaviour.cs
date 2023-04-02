@@ -54,7 +54,7 @@ public class PHSceneBehaviourEditor : Editor {
                         Undo.RecordObject(phSceneBehaviour, "Collision Setting is changed");
                         collisionItem.solid1 = solid1;
                     }
-                } else if (collisionItem.targetSetMode1 == PHSceneBehaviour.CollisionSetting.CollisionTargetSettingMode.TagMatching) {
+                } else if (collisionItem.targetSetMode1 == PHSceneBehaviour.CollisionSetting.CollisionTargetSettingMode.NameMatching) {
                     EditorGUI.BeginChangeCheck();
                     var solid1Pattern = EditorGUILayout.TextField(collisionItem.solid1Pattern);
                     if (EditorGUI.EndChangeCheck()) {
@@ -80,7 +80,7 @@ public class PHSceneBehaviourEditor : Editor {
                         Undo.RecordObject(phSceneBehaviour, "Collision Setting is changed");
                         collisionItem.solid2 = solid2;
                     }
-                } else if (collisionItem.targetSetMode2 == PHSceneBehaviour.CollisionSetting.CollisionTargetSettingMode.TagMatching) {
+                } else if (collisionItem.targetSetMode2 == PHSceneBehaviour.CollisionSetting.CollisionTargetSettingMode.NameMatching) {
                     var solid2Pattern = EditorGUILayout.TextField(collisionItem.solid2Pattern);
                     if (EditorGUI.EndChangeCheck()) {
                         Undo.RecordObject(phSceneBehaviour, "Collision Setting is changed");
@@ -139,7 +139,7 @@ public class PHSceneBehaviour : SprBehaviour {
 
     [Serializable]
     public class CollisionSetting {
-        public enum CollisionTargetSettingMode { All, One, TagMatching };
+        public enum CollisionTargetSettingMode { All, One, NameMatching };
 
         public CollisionTargetSettingMode targetSetMode1 = CollisionTargetSettingMode.All;
         public PHSolidBehaviour solid1 = null;
@@ -207,7 +207,7 @@ public class PHSceneBehaviour : SprBehaviour {
 
     // -- Sprオブジェクトの構築を行う
     public override ObjectIf Build() {
-        SEH_Exception.init();
+        //SEH_Exception.init();
 
         PHSceneIf phScene;
         if (enableDebugWindow) {
@@ -251,8 +251,6 @@ public class PHSceneBehaviour : SprBehaviour {
             fixedUpdateCallbacks.Add(callbackPriority, new List<PHSceneBehaviourCallbackItem>());
         }
     }
-
-
     public override void Start() {
         base.Start();
         if (enableDebugWindow) {
@@ -263,28 +261,8 @@ public class PHSceneBehaviour : SprBehaviour {
                 fwSceneIf.EnableRender(joint, false);
             }
         }
-
     }
-    
-
-    public GameObject forcePoint;
-    // List<GameObject> PosedList = new List<GameObject>();
     void FixedUpdate() {
-        // PosedList.Clear();
-        // for (int i = 0; i < phScene.NContacts(); i++){
-        //     Vec3d f = new Vec3d();
-        //     Vec3d to = new Vec3d();
-        //     Posed pose = new Posed();
-        //     print(i);
-        //     PHContactPointIf contact = phScene.GetContact(i);
-            
-        //     contact.GetConstraintForce(f, to);//一个是力另一个是力矩
-        //     contact.GetSocketPose(pose);
-        //     GameObject oneSphere = Instantiate(forcePoint);
-        //     oneSphere.transform.position = new Vector3((float)pose.px, (float)pose.py, (float)pose.pz);
-        //     // PosedList.Add(oneSphere);
-        //     Destroy(oneSphere, 0.1f);
-        // }
         if (enableUpdate) {
             foreach (var callBackItem in fixedUpdateCallbacks[CallbackPriority.BeforeUpdateSolidFromGameObject]) {
                 callBackItem.callback();
@@ -378,28 +356,18 @@ public class PHSceneBehaviour : SprBehaviour {
 
                 List<PHSolidBehaviour> solid1s = new List<PHSolidBehaviour>();
                 List<PHSolidBehaviour> solid2s = new List<PHSolidBehaviour>();
+
                 if (c.targetSetMode1 == CollisionSetting.CollisionTargetSettingMode.One) {
                     solid1s.Add(c.solid1);
-                } else if (c.targetSetMode1 == CollisionSetting.CollisionTargetSettingMode.TagMatching) {
+                } else if (c.targetSetMode1 == CollisionSetting.CollisionTargetSettingMode.NameMatching) {
                     // -- TBD
-                    foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag(c.solid1Pattern))
-                    {
-                        //print(fooObj.name);
-                        solid1s.Add(fooObj.GetComponent<PHSolidBehaviour>());
-                    }
                 }
 
                 if (c.targetSetMode2 == CollisionSetting.CollisionTargetSettingMode.One) {
                     solid2s.Add(c.solid2);
-                } else if (c.targetSetMode2 == CollisionSetting.CollisionTargetSettingMode.TagMatching) {
+                } else if (c.targetSetMode2 == CollisionSetting.CollisionTargetSettingMode.NameMatching) {
                     // -- TBD
-                    foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag(c.solid2Pattern))
-                    {
-                        //print(fooObj.name);
-                        solid2s.Add(fooObj.GetComponent<PHSolidBehaviour>());
-                    }
                 }
-                //print(solid1s.Count);
 
                 // -----
 
@@ -425,8 +393,7 @@ public class PHSceneBehaviour : SprBehaviour {
                     foreach (var solid1 in solid1s) {
                         foreach (var solid2 in solid2s) {
                             if (solid1?.sprObject != null && solid2?.sprObject != null) {
-                                if(solid1 != solid2)
-                                    phScene.SetContactMode(solid1.phSolid, solid2.phSolid, c.mode);
+                                phScene.SetContactMode(solid1.phSolid, solid2.phSolid, c.mode);
                             }
                         }
                     }

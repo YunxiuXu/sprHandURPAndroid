@@ -54,9 +54,9 @@ public class CDConvexMeshBehaviour : CDShapeBehaviour {
         for (int vi = 0; vi < mesh.vertices.Length; vi++) {
             Vector3 vU = mesh.vertices[vi];
             Vec3f v = new Vec3f();
-            v.x = vU.x * this.transform.localScale.x;
-            v.y = vU.y * this.transform.localScale.y;
-            v.z = vU.z * this.transform.localScale.z;
+            v.x = vU.x * this.transform.lossyScale.x;
+            v.y = vU.y * this.transform.lossyScale.y;
+            v.z = vU.z * this.transform.lossyScale.z;
             d.vertices.push_back(v);
         }
 

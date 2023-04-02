@@ -69,13 +69,13 @@ public class PHOpBehaviour : SprSceneObjBehaviour {
 
     private int copySize;
 
-    // -- DescStructƒIƒuƒWƒFƒNƒg‚ğÄ\’z‚·‚é
+    // -- DescStructï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½Ä\ï¿½zï¿½ï¿½ï¿½ï¿½
     public override void ResetDescStruct()
     {
         desc = new PHOpObjDesc();
     }
 
-    // -- DescStructƒIƒuƒWƒFƒNƒg‚ğæ“¾‚·‚é
+    // -- DescStructï¿½Iï¿½uï¿½Wï¿½Fï¿½Nï¿½gï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½
     public override CsObject GetDescStruct()
     {
         return desc;

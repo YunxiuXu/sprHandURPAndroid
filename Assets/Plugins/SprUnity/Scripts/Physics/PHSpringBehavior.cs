@@ -59,9 +59,4 @@ public class PHSpringBehavior : PHJointBehaviour {
     public override PHJointIf CreateJoint(PHSolidIf soSock, PHSolidIf soPlug) {
         return phScene.CreateJoint(soSock, soPlug, PHSpringIf.GetIfInfoStatic(), (PHSpringDesc)desc);
     }
-
-    // public void setSth(){
-    //     sprObject.SetSpringOri(1);
-    //     phSpring.SetDamperOri
-    // }
 }

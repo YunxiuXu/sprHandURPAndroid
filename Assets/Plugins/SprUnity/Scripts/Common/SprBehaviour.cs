@@ -5,45 +5,60 @@ using SprCs;
 
 public class SprBehaviourBase : MonoBehaviour {
     // -- DLLパスをセットするWindows API
-    [System.Runtime.InteropServices.DllImport("kernel32", SetLastError = true)]
-    protected static extern bool SetDllDirectory(string lpPathName);
+    // DllImport[("libSystem.dylib", SetLastError = true)]
+    // private static extern bool dlopen(string path, int mode);
 
+    // public static bool SetDllDirectory(string lpPathName)
+    // {
+    //     // Check if running on macOS
+    //     if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+    //     {
+    //         // Call dlopen to set the library search path
+    //         return dlopen(lpPathName, 2 /*RTLD_GLOBAL*/) != false;
+    //     }
+    //     else
+    //     {
+    //         // Not running on macOS, do nothing
+    //         return true;
+    //     }
+    // }
     // -- 一度だけDLLパスをセットする（一度呼べば十分なので）
-    public static bool dllPathAlreadySet = false;
+    //public static bool dllPathAlreadySet = false;
     protected void SetDLLPath() {
-        if (!dllPathAlreadySet) {
-            // 非実行中にはApplication.dataPathは使えないので
-            string currDir = Directory.GetCurrentDirectory();
+        // if (!dllPathAlreadySet) {
+        //     // 非実行中にはApplication.dataPathは使えないので
+        //     string currDir = Directory.GetCurrentDirectory();
 
-            List<string> dirCands = new List<string>();
-            dirCands.Add(currDir);
+        //     List<string> dirCands = new List<string>();
+        //     dirCands.Add(currDir);
 
-            // SprUnity/Pluginsフォルダの場所を探す
-            for (int i = 0; i < 10; i++) { // フォルダ階層を10階層までは辿る
-                List<string> newDirCands = new List<string>();
-                foreach (var dir in dirCands) {
-                    if (Directory.Exists(dir + "/SprUnity/Plugins")) {
-                        SetDllDirectory(dir + "/SprUnity/Plugins");
-                        Debug.Log("SprUnity Plugins Found at : " + dir + "/SprUnity/Plugins");
-                        dllPathAlreadySet = true;
-                        newDirCands.Clear();
-                        break;
+        //     // SprUnity/Pluginsフォルダの場所を探す
+        //     for (int i = 0; i < 10; i++) { // フォルダ階層を10階層までは辿る
+        //         List<string> newDirCands = new List<string>();
+        //         foreach (var dir in dirCands) {
+        //             if (Directory.Exists(dir + "/SprUnity/Plugins")) {
+        //                 SetDllDirectory(dir + "/SprUnity/Plugins");
+        //                 Debug.Log("SprUnity Plugins Found at : " + dir + "/SprUnity/Plugins");
+        //                 dllPathAlreadySet = true;
+        //                 newDirCands.Clear();
+        //                 break;
 
-                    } else if (File.Exists(dir + "/Plugins/SprExport.dll")) {
-                        SetDllDirectory(dir + "/Plugins");
-                        dllPathAlreadySet = true;
-                        newDirCands.Clear();
-                        break;
+        //             } else if (File.Exists(dir + "/Plugins/SprExport.dll")) {
+        //                 SetDllDirectory(dir + "/Plugins");
+        //                 dllPathAlreadySet = true;
+        //                 newDirCands.Clear();
+        //                 break;
 
-                    } else {
-                        foreach (var subDir in Directory.GetDirectories(dir)) {
-                            newDirCands.Add(subDir);
-                        }
-                    }
-                }
-                dirCands = newDirCands;
-            }
-        }
+        //             } else {
+        //                 foreach (var subDir in Directory.GetDirectories(dir)) {
+        //                     newDirCands.Add(subDir);
+        //                 }
+        //             }
+        //         }
+        //         dirCands = newDirCands;
+        //     }
+        // }
+        Debug.Log("start");
     }
 
     // -- Spr関連オブジェクトがコンストラクトされる時に自動で呼ぶ
