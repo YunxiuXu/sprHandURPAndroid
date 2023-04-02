@@ -38,15 +38,24 @@
   <ItemGroup>
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IConduitAssembly.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyMiner.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Training\IProcessStep.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\FileIo.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\SourceCodeMapper.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Training\EnumCodeWrapper.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyWalker.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\AssemblyInfo.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Training\EntitiesDelta.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IParameterValidator.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IFileIo.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IAssemblyMiner.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Training\KeywordsDelta.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ManifestGenerator.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Training\EnumSynchronizer.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ConduitStatistics.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\PersistenceLayer.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IAssemblyWalker.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\ConduitAssembly.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IParameterFilter.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\IPersistenceLayer.cs" />
      <None Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Editor\Facebook.Wit.Conduit.Editor.asmdef" />
     <Reference Include="UnityEngine">

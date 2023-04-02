@@ -36,7 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\Data\WitKeyword.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\Data\ManifestEntity.cs" />
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\Data\ConduitParameterValue.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\Attributes\ConduitEntityAttribute.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\Data\ManifestAction.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Conduit\Runtime\IConduitDispatcher.cs" />

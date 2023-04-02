@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS\Samples\Scripts\TTSStatusLabel.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS\Samples\Scripts\TTSErrorText.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS\Samples\Scripts\TTSSpeakerInput.cs" />
      <Compile Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS\Samples\Scripts\TTSCacheToggle.cs" />

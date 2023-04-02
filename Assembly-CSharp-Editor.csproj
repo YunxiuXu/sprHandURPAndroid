@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2021_3_16;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;DEVELOPMENT_BUILD</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2021_3_16;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;DEVELOPMENT_BUILD</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -37,13 +37,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
      <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
-     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
+     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildSamples.cs" />
+     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
+     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\Editor\TeleportTransitionWarpInspector.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\MediaPlayerImageEditor.cs" />
     <Reference Include="UnityEngine">
@@ -304,20 +304,20 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Burst.Cecil.Pdb">
-        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.collab-proxy@1.17.7\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.collab-proxy@1.17.7\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.collab-proxy@1.17.7\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
@@ -736,6 +736,9 @@
     <Reference Include="UnityEditor.UI">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.InputSystem">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
@@ -772,6 +775,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.XR.Management.Editor">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
@@ -789,6 +795,9 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
@@ -808,6 +817,9 @@
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.OpenXR.Editor">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Services.Core.Environments">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
@@ -817,14 +829,23 @@
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.XR.Oculus">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
+        <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
         <HintPath>C:\XYX\UnityProjects\AndroidUnityArea\sprHandURPAndroid\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
@@ -855,6 +876,10 @@
       <Project>{a29c943f-765c-218f-3980-7dd063a861dd}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
+    <ProjectReference Include="Meta.VoiceSDK.Mic.Common.csproj">
+      <Project>{d7361fbe-21c4-ba76-fb65-b5e56ce83435}</Project>
+      <Name>Meta.VoiceSDK.Mic.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
       <Project>{4eef4384-1155-d9ee-0a4c-519226a10f7f}</Project>
       <Name>Oculus.Interaction</Name>
@@ -863,9 +888,9 @@
       <Project>{61e43a75-cda2-6e33-ce9c-8431ca6b1cea}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Conduit.csproj">
-      <Project>{e3c26048-b7ef-e7ae-b40f-d1912cd463fb}</Project>
-      <Name>Facebook.Wit.Conduit</Name>
+    <ProjectReference Include="Meta.WitAi.Conduit.csproj">
+      <Project>{3a52f122-4c56-735a-5bac-3298853de738}</Project>
+      <Name>Meta.WitAi.Conduit</Name>
     </ProjectReference>
     <ProjectReference Include="LitJson.csproj">
       <Project>{4af3d4f1-4693-5eaa-da79-5fa03e784dce}</Project>
@@ -879,9 +904,9 @@
       <Project>{2e780c5e-2e63-e1af-c9f1-edf237c1e542}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{a53b4332-6033-133d-94de-0c2a7f081015}</Project>
-      <Name>Facebook.WitAI</Name>
+    <ProjectReference Include="Meta.WitAi.csproj">
+      <Project>{491d7f88-74c6-ec7a-38bf-51bd01b286d9}</Project>
+      <Name>Meta.WitAi</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
       <Project>{e9ff9272-9e8c-e7e7-ece4-e3550b9d70e5}</Project>
@@ -903,17 +928,17 @@
       <Project>{6a519d58-691e-d242-4d1c-eb4ed1e08a17}</Project>
       <Name>Oculus.Spatializer.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.TTS.csproj">
-      <Project>{8d2cb278-04fb-ab88-f0b5-42aec6360d2d}</Project>
-      <Name>Facebook.Wit.TTS</Name>
+    <ProjectReference Include="Meta.WitAI.Lib.Editor.csproj">
+      <Project>{0c8d16c8-1613-e6be-b206-19da5ee18513}</Project>
+      <Name>Meta.WitAI.Lib.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.TTS.Editor.csproj">
-      <Project>{93ec2282-6b54-a679-6d68-92ac627205f2}</Project>
-      <Name>Facebook.Wit.TTS.Editor</Name>
+    <ProjectReference Include="Meta.WitAi.TTS.csproj">
+      <Project>{197eeb7c-71d7-0582-ad5d-d30af2e6f99a}</Project>
+      <Name>Meta.WitAi.TTS</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{6cd13a33-87d2-0f95-d05c-dfec0577db49}</Project>
-      <Name>Oculus.Platform.Editor</Name>
+    <ProjectReference Include="Meta.WitAi.TTS.Editor.csproj">
+      <Project>{8db5a7c0-7370-0fa5-0e27-124c2d1b7b03}</Project>
+      <Name>Meta.WitAi.TTS.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
       <Project>{bd7b544b-3596-e5dd-0810-282573a7ffc5}</Project>
@@ -939,9 +964,13 @@
       <Project>{54ab3281-dd46-bd2e-43c6-dcd3ad4c449b}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Conduit.Editor.csproj">
-      <Project>{47b14d64-16b2-02a9-e1f5-e0259e7c566f}</Project>
-      <Name>Facebook.Wit.Conduit.Editor</Name>
+    <ProjectReference Include="Meta.VoiceSDK.Mic.Other.csproj">
+      <Project>{579c4de7-a557-9f74-216f-267f3b4246f8}</Project>
+      <Name>Meta.VoiceSDK.Mic.Other</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Conduit.Editor.csproj">
+      <Project>{98bbfa4d-f00b-b597-8d3e-3db53f3d9c84}</Project>
+      <Name>Meta.WitAi.Conduit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
       <Project>{73aebfd6-04ff-1711-f69f-c0c419021bae}</Project>
@@ -955,13 +984,9 @@
       <Project>{b17c8233-2d7e-130d-c41a-8ed87ce4b3b4}</Project>
       <Name>Oculus.Interaction.OVR.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{651cdc02-2cfb-4c7f-273b-9083d623bb4e}</Project>
-      <Name>Facebook.Wit.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
-      <Project>{9be78b96-58e5-a10f-a319-f5ddfbfc1ca5}</Project>
-      <Name>VoiceSDK.Dictation.Editor</Name>
+    <ProjectReference Include="Meta.WitAi.Editor.csproj">
+      <Project>{c98449eb-e7a9-08d7-e256-943c50a9f570}</Project>
+      <Name>Meta.WitAi.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Dictation.Runtime.csproj">
       <Project>{f5b0b8b3-c895-7be3-4719-ff0dbf917c0f}</Project>
@@ -975,9 +1000,13 @@
       <Project>{1e1b06e1-506f-0c72-d8e3-281562ad1123}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.TTS.Samples.csproj">
-      <Project>{83e575d1-ed67-f208-10fc-b42884946161}</Project>
-      <Name>Facebook.Wit.TTS.Samples</Name>
+    <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
+      <Project>{9be78b96-58e5-a10f-a319-f5ddfbfc1ca5}</Project>
+      <Name>VoiceSDK.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.TTS.Samples.csproj">
+      <Project>{179710d4-7456-4686-92f4-1dc714643522}</Project>
+      <Name>Meta.WitAi.TTS.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
       <Project>{f3814fcc-7533-926c-4283-57ffc5eae062}</Project>
@@ -986,6 +1015,14 @@
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{7c85dce3-a522-a94d-043f-24c22a1560de}</Project>
       <Name>VoiceSDK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Lib.csproj">
+      <Project>{50d6ae1a-06d7-f045-ebcb-187079c24d48}</Project>
+      <Name>Meta.WitAi.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.Editor.csproj">
+      <Project>{6cd13a33-87d2-0f95-d05c-dfec0577db49}</Project>
+      <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
