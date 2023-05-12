@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Developing/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/URPScene/NormalScaleURP - VR.unity
     guid: 16c34e30a53d5eb498190aa21f180518
   - enabled: 0
     path: Assets/Scenes/RigidBody/RigidBody.unity
     guid: dfaaef955aae9e54c874f27b244d95c5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PassthroughPet.unity
     guid: 18dccc7acad95f347b32ab2463b63ef9
   m_configObjects:
