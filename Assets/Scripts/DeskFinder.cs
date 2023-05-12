@@ -14,12 +14,11 @@ public class DeskFinder : MonoBehaviour
 
             foreach (GameObject cube in cubes)
             {
-                print("大大大大大大"+cube.name);
                 if (cube.name == "Parent")
                 {
                     if(cube.layer == 9){//Furniture{
-                        Debug.Log("找到了桌面物体：" + cube.name);
                         DeskCenter.transform.position = cube.transform.position;
+                        DeskCenter.transform.rotation = cube.transform.rotation;
                         isFind = 1;
                     }
                     // 找到了名称为"Cube"的物体
