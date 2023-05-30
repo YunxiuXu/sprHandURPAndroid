@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RigidBody/RigidBody.unity
     guid: dfaaef955aae9e54c874f27b244d95c5
   - enabled: 1
-    path: Assets/Scenes/PassthroughPet.unity
+    path: Assets/Scenes/main.unity
     guid: 18dccc7acad95f347b32ab2463b63ef9
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c5c6326ce86784349b763af632526b5d, type: 2}
