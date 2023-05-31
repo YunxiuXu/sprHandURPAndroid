@@ -14,6 +14,7 @@ public class objectRespawn : MonoBehaviour
     void Start()
     {
         initPosition = this.transform.position;
+        //initScale = this.transform.localScale;
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class objectRespawn : MonoBehaviour
     {
         if(this.transform.position.y < deadY){
             GameObject go = Instantiate(this.gameObject, initPosition, new Quaternion(0, 0, 0, 1));
+            //go.transform.localScale = initScale;
             //go.GetComponent<Renderer> ().material.color = colorlist[Random.Range(0, colorlist.Count)]; 
             Destroy(this.gameObject);
         }
